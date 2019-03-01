@@ -27,6 +27,7 @@ autocmd FileType go nmap <leader>b :<C-u>call <SID>build_go_files()<CR>
 nnoremap <leader>d "_d
 xnoremap <leader>d "_d
 xnoremap <leader>p "_dP
+let g:go_fmt_command = "goimports"
 
 " VIM Configuration - Vincent Jousse
 " Cancel the compatibility with Vi. Essential if you want
@@ -60,6 +61,8 @@ set backspace=indent,eol,start
 " Hide buffer (file) instead of abandoning when switching
 " to another buffer
 set hidden
+" enable scrolling
+set mouse=a
 
 :imap ii <Esc>
 
@@ -72,3 +75,4 @@ imap <up> <nop>
 imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
+
